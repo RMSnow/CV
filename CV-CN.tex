@@ -1,0 +1,185 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage{CJKutf8}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{1.jpg} % Profile picture
+
+\cvname{张雪遥} % Your name
+\cvjobtitle{武汉大学计算机学院} % Job title/career
+
+\cvdate{软件工程专业2015级本科生} % Date of birth
+\cvaddress{} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+86-15203900168} % Phone number
+\cvsite{http://www.zhangxueyao.com} % Personal website
+\cvmail{xueyao\_98@foxmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% 楷体
+% \begin{CJK*}{UTF8}{gkai}
+% 宋体
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+% \aboutme{Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.} % To have no About Me section, just remove all the text and leave \aboutme{}
+\aboutme{
+	张雪遥，男，1998年1月17日生。
+	\\2015年9月进入武汉大学，现就读于计算机学院软件工程专业。
+	\\现于武汉大学网络信息系统安全实验室实习，研究课题为用户点击率预测、广告欺骗检测等。
+	\\研究兴趣包括数据挖掘、机器学习等，希望能够在研究生期间，投身人工智能相关领域。
+}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+% \skills{
+% 	{pursuer of rabbits/5.8},
+% 	{good manners/4},
+% 	{outgoing/4.3},
+% 	{polite/4},
+% 	{Java/0.01}}
+% \skills{}
+
+% ------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+\section{本科教育}
+
+GPA：3.83 / 4.0\\
+平均分：90.373 / 100\\
+排名：本专业人数246，成绩排名1\%\\
+全国大学英语六级考试(CET-6)成绩：522
+
+
+% \begin{twenty}
+% 	\twentyitem{GPA}{3.83}{}{}
+% 	\twentyitem{Grades}{90.373}{}{}
+% \end{twenty}
+
+%----------------------------------------------------------------------------------------
+
+\section{获奖经历}
+
+\begin{itemize}
+	\item 2016-2017学年度武汉大学优秀学生甲等奖学金（注：校级一等，前5\%）
+	\item 2016-2017学年度武汉大学三好学生（注：校级，前1\%）
+	\item 武汉大学2016年度优秀团员（注：校级，前1\%）
+	\item 2015-2016学年度国家奖学金（注：国家级，前1\%）
+	\item 2015-2016学年度武汉大学优秀学生甲等奖学金（注：校级一等，前5\%）
+	\item 2015-2016学年度武汉大学三好学生（注：校级，前1\%）
+	\item 2015-2015学年度武汉大学优秀学生干部（注：校级，前1\%）
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\section{研究经历}
+
+% \begin{itemize}
+% 	\item As an intern of Network Information System Security \& Privacy Lab (NIS\&P), 
+% 		Xueyao is supevised by Professor Yanjiao Chen now.
+% 	\item Xueyao is now occupied with the research of 
+% 		Click-Through Rate (CTR), Ad Fraud Detection, and Recommendation System 
+% 		by means of data mining, machine learning and deep learning.
+% \end{itemize}
+
+\begin{itemize}
+	\item 目前在武汉大学网络信息系统安全实验室（Network Information System Security \& Privacy Lab, NIS\&P）实习，指导老师为陈艳姣教授。
+	\item 机器学习、数据挖掘、深度学习等算法，在用户点击率预测（Click-Through Rate, CTR）、广告欺骗检测（Ad Fraud Detection）、推荐系统（Recommendation System）等领域的应用。
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\section{课程经历}
+
+\begin{itemize}
+	\item 2018年春季，人机交互，课程助教
+	\item 2017年秋季，面向对象程序设计（Java），课程助教
+	\item Coursera在线课程——Deep Learning Specialization
+		\begin{itemize}
+			\item 此专项培训共分为神经网络与深度学习、改善深层神经网络、结构化机器学习项目、卷积神经网络、序列模型等五个课程。
+			\item 课程主讲人为Andrew Ng
+			\item 成功通过课程考试并拿到了Coursera证书
+		\end{itemize}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\section{项目与比赛}
+
+\begin{enumerate}
+	\item TalkingData AdTracking Fraud Detection Challenge
+		\begin{itemize}
+			\item 该比赛发布在Kaggle平台，由TalkingData提供数据集。
+			\item 用户在用手机上网时，有时会点击“下载某APP”的广告。比赛的最终目标，是通过用户行为的数据集构建算法，预测一个点击广告的用户是否会下载APP。
+			\item 我们尝试了机器学习、深度学习的多种模型，如LR、FM、GBDT、DNN等，最终构建了基于GBDT/LR、DNN/LR/FM的混合模型。
+			\item 比赛仍在进行，目前参加队伍约为3500支，我们的当前排名为30\%
+		\end{itemize}
+	\item 蓝桥杯编程大赛
+		\begin{itemize}
+			\item 蓝桥杯编程大赛的主办方为工业和信息化部人才交流中心。
+			\item 参赛者需在4个小时的时间内解决若干算法问题。
+			\item 比赛仍在进行，目前我已获得湖北省一等奖，并成功入围全国总决赛。
+		\end{itemize}
+	\item “云课堂”——在线教育平台开发
+		\begin{itemize}
+			\item “云课堂”是一个跨平台的在线教育应用。项目的开发团队约为30人。
+			\item 整个应用采用微服务架构，我们采用了Java作为后端开发语言。
+			\item 我作为后端开发者独立完成了“日志服务”模块，模块包括日志记录、流量监测与分析等功能。
+		\end{itemize}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\section{社会活动}
+
+\begin{itemize}
+	\item 2016-2017学年度，院学生会文艺部部长。
+	\item 2016年3月至10月，武汉大学自强工作室“淘课啦”项目组，产品副经理。
+	\item 2015年入学至今，软件工程专业5班班长。
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+% \newpage % Start a new page
+
+% \makeprofile % Print the sidebar
+
+% \section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+\end{CJK*}
+\end{document} 

@@ -36,7 +36,7 @@
 %	 MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
+% \renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
 
 \pagestyle{empty} % Disable headers and footers
 
@@ -61,7 +61,7 @@
 	\settowidth{\SectionTitleLength}{\huge #1 }% Calculate the width of the section title
 	\addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
 	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
-	\vspace{8pt}% Whitespace before the section title
+	\vspace{18pt}% Whitespace before the section title
 	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
 }
 
@@ -131,12 +131,16 @@
 		}
 
 		%------------------------------------------------
-		\begin{center}
-			{\Huge\color{mainblue}\cvname\\}	
-		\end{center}
-		% {\Huge\color{mainblue}\cvname}
 
+		\begin{center}
+			{\Huge\color{mainblue}\cvname}	
+		\end{center}
+		% \begin{center}
+		% 	{}	
+		% \end{center}
+		
 		%------------------------------------------------
+
 		\begin{center}
 			{\Large\color{black!80}\cvjobtitle}
 		\end{center}
@@ -144,7 +148,7 @@
 
 		%------------------------------------------------
 
-		\renewcommand{\arraystretch}{1.6}
+		\renewcommand{\arraystretch}{1.2}
 		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
 			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
@@ -268,4 +272,4 @@
 
 \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
 
-\RequirePackage{hyperref}
+\RequirePackage[colorlinks,urlcolor=blue]{hyperref}

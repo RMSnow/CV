@@ -2,8 +2,12 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\documentclass[letterpaper,AutoFakeBold]{twentysecondcv} % a4paper for A4
 \usepackage{CJKutf8}
+\usepackage{booktabs}
+
+% 设置双倍行距
+\linespread{1.6}
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -16,7 +20,7 @@
 \cvname{张雪遥} % Your name
 \cvjobtitle{武汉大学计算机学院} % Job title/career
 
-\cvdate{软件工程专业2015级本科生} % Date of birth
+\cvdate{软件工程专业\,2015\,级本科生} % Date of birth
 \cvaddress{} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{+86-15203900168} % Phone number
 \cvsite{http://www.zhangxueyao.com} % Personal website
@@ -37,41 +41,34 @@
 
 % \aboutme{Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.} % To have no About Me section, just remove all the text and leave \aboutme{}
 \aboutme{
-	张雪遥，男，1998年1月17日生。
-	\\2015年9月进入武汉大学，现就读于计算机学院软件工程专业。
-	\\现于武汉大学网络信息系统安全实验室实习，研究课题为用户点击率预测、广告欺骗检测等。
-	\\研究兴趣包括数据挖掘、机器学习等，希望能够在研究生期间，投身人工智能相关领域。
+	张雪遥，男，1998\,年\,1\,月\,17\,日生.
+	\\2015\,年\,9\,月进入武汉大学，就读于计算机学院软件工程专业，曾获国家奖学金\,(2016)\,，并多次获得武汉大学甲等奖学金、武汉大学三好学生等荣誉.
+	\\[2ex]现于\href{http://nisplab.whu.edu.cn/index.html}{武汉大学网络信息系统安全实验室（\emph{NIS\&P}）}实习，
+	指导教师为\href{http://iqua.ece.toronto.edu/ychen/}{陈艳姣}教授，研究课题包含用户点击率预测、广告欺骗检测等.
+	\\[2ex]研究兴趣包括数据挖掘、机器学习等，希望能够在研究生期间，投身人工智能相关领域.
 }
-
-%----------------------------------------------------------------------------------------
-%	 SKILLS
-%----------------------------------------------------------------------------------------
-
-% Skill bar section, each skill must have a value between 0 an 6 (float)
-% \skills{
-% 	{pursuer of rabbits/5.8},
-% 	{good manners/4},
-% 	{outgoing/4.3},
-% 	{polite/4},
-% 	{Java/0.01}}
-% \skills{}
-
-% ------------------------------------------------
-
-% Skill text section, each skill must have a value between 0 an 6
-% \skillstext{{lovely/4},{narcissistic/3}}
 
 %----------------------------------------------------------------------------------------
 
 \makeprofile % Print the sidebar
 
-\section{本科教育}
+\begin{CJK*}{UTF8}{gkai}
+\section{\large本科教育}
+\end{CJK*}
 
-GPA：3.83 / 4.0\\
-平均分：90.373 / 100\\
-排名：本专业人数246，成绩排名1\%\\
-全国大学英语六级考试(CET-6)成绩：522
-
+\begin{center}
+	\begin{tabular}{lll}
+		\toprule
+		\textbf{GPA} & \quad3.83 & \quad满绩：4.0 \\
+		\midrule
+		\textbf{平均分} & \quad90.373 & \quad满分：100 \\
+		\midrule
+		\textbf{排名} & \quad1\% & \quad专业人数：246 \\
+		\midrule
+		\textbf{CET-6} & \quad522 & \quad过线分：425 \\
+		\bottomrule
+	\end{tabular}
+\end{center}
 
 % \begin{twenty}
 % 	\twentyitem{GPA}{3.83}{}{}
@@ -80,85 +77,137 @@ GPA：3.83 / 4.0\\
 
 %----------------------------------------------------------------------------------------
 
-\section{获奖经历}
+\begin{CJK*}{UTF8}{gkai}
+\section{\large获奖经历}
+\end{CJK*}
 
+% TODO：加粗
 \begin{itemize}
-	\item 2016-2017学年度武汉大学优秀学生甲等奖学金（注：校级一等，前5\%）
-	\item 2016-2017学年度武汉大学三好学生（注：校级，前1\%）
-	\item 武汉大学2016年度优秀团员（注：校级，前1\%）
-	\item 2015-2016学年度国家奖学金（注：国家级，前1\%）
-	\item 2015-2016学年度武汉大学优秀学生甲等奖学金（注：校级一等，前5\%）
-	\item 2015-2016学年度武汉大学三好学生（注：校级，前1\%）
-	\item 2015-2015学年度武汉大学优秀学生干部（注：校级，前1\%）
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\item 2016\,-\,2017\,学年度武汉大学优秀学生甲等奖学金（注：校级一等，前5\%）.
+	\item 2016\,-\,2017\,学年度武汉大学三好学生（注：校级，前1\%）.
+	\item 武汉大学\,2016\,年度优秀团员（注：校级，前1\%）.
+	\item 2015\,-\,2016\,学年度国家奖学金（注：国家级，前1\%）.
+	\item 2015\,-\,2016\,学年度武汉大学优秀学生甲等奖学金（注：校级一等，前5\%）.
+	\item 2015\,-\,2016\,学年度武汉大学三好学生（注：校级，前1\%）.
+	\item 2015\,-\,2015\,学年度武汉大学优秀学生干部（注：校级，前1\%）.
+	\item 2014\,年全国高中生数学联赛一等奖.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
 
-\section{研究经历}
+\begin{CJK*}{UTF8}{gkai}
+\section{\large研究经历}
+\end{CJK*}
 
-% \begin{itemize}
-% 	\item As an intern of Network Information System Security \& Privacy Lab (NIS\&P), 
-% 		Xueyao is supevised by Professor Yanjiao Chen now.
-% 	\item Xueyao is now occupied with the research of 
-% 		Click-Through Rate (CTR), Ad Fraud Detection, and Recommendation System 
-% 		by means of data mining, machine learning and deep learning.
-% \end{itemize}
-
+2018.03\,起 \qquad \href{http://nisplab.whu.edu.cn/index.html}{武汉大学网络信息系统安全实验室}\hfill本科生实习
 \begin{itemize}
-	\item 目前在武汉大学网络信息系统安全实验室（Network Information System Security \& Privacy Lab, NIS\&P）实习，指导老师为陈艳姣教授。
-	\item 机器学习、数据挖掘、深度学习等算法，在用户点击率预测（Click-Through Rate, CTR）、广告欺骗检测（Ad Fraud Detection）、推荐系统（Recommendation System）等领域的应用。
+	% \setlength{\itemsep}{0pt}
+	% \setlength{\parsep}{0pt}
+	% \setlength{\parskip}{0pt}
+	\item 指导教师：\href{http://iqua.ece.toronto.edu/ychen/}{陈艳姣}教授.
+	\item 研究课题：用户点击率预测\,\emph{(Click-Through Rate, CTR)}、
+	广告欺骗检测\emph{(Ad Fraud Detection)}、
+	推荐系统\emph{(Recommendation System)}\,等.
+	\item 研究方法：数据挖掘、机器学习、深度学习等.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
 
-\section{课程经历}
+\begin{CJK*}{UTF8}{gkai}
+\section{\large课程经历}
+\end{CJK*}
 
-\begin{itemize}
-	\item 2018年春季，人机交互，课程助教
-	\item 2017年秋季，面向对象程序设计（Java），课程助教
-	\item Coursera在线课程——Deep Learning Specialization
-		\begin{itemize}
-			\item 此专项培训共分为神经网络与深度学习、改善深层神经网络、结构化机器学习项目、卷积神经网络、序列模型等五个课程。
-			\item 课程主讲人为Andrew Ng
-			\item 成功通过课程考试并拿到了Coursera证书
-		\end{itemize}
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-
-\section{项目与比赛}
 
 \begin{enumerate}
-	\item TalkingData AdTracking Fraud Detection Challenge
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\item 2018\,年春季：人机交互，课程助教
+	\item 2017\,年秋季：\href{http://www.javatree.cn/}{面向对象程序设计\,(\emph{Java})\,}，课程助教
+	\item \emph{Coursera\,}在线课程：\href{https://www.coursera.org/specializations/deep-learning}{\emph{Deep Learning Specialization}}
 		\begin{itemize}
-			\item 该比赛发布在Kaggle平台，由TalkingData提供数据集。
-			\item 用户在用手机上网时，有时会点击“下载某APP”的广告。比赛的最终目标，是通过用户行为的数据集构建算法，预测一个点击广告的用户是否会下载APP。
-			\item 我们尝试了机器学习、深度学习的多种模型，如LR、FM、GBDT、DNN等，最终构建了基于GBDT/LR、DNN/LR/FM的混合模型。
-			\item 比赛仍在进行，目前参加队伍约为3500支，我们的当前排名为30\%
-		\end{itemize}
-	\item 蓝桥杯编程大赛
-		\begin{itemize}
-			\item 蓝桥杯编程大赛的主办方为工业和信息化部人才交流中心。
-			\item 参赛者需在4个小时的时间内解决若干算法问题。
-			\item 比赛仍在进行，目前我已获得湖北省一等奖，并成功入围全国总决赛。
-		\end{itemize}
-	\item “云课堂”——在线教育平台开发
-		\begin{itemize}
-			\item “云课堂”是一个跨平台的在线教育应用。项目的开发团队约为30人。
-			\item 整个应用采用微服务架构，我们采用了Java作为后端开发语言。
-			\item 我作为后端开发者独立完成了“日志服务”模块，模块包括日志记录、流量监测与分析等功能。
+			\item 该专项培训共分为：
+			\emph{Neural Networks and Deep Learning}，
+			\emph{Improving Deep Neural Networks}，
+			\emph{Structuring Machine Learning Projects}，
+			\emph{Convolutional Neural Networks}，
+			\emph{Sequence Models}\,等五个课程.
+			\item 该专项培训由\,\emph{deeplearning.ai}\,发布，主讲人为\,\href{https://www.coursera.org/instructor/andrewng}{\emph{Andrew Ng}}\,.
+			\item 成功通过课程考试，并拿到\,\emph{Coursera}\,证书.
 		\end{itemize}
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
 
-\section{社会活动}
+\begin{CJK*}{UTF8}{gkai}
+	\section{\large社会活动}
+	\end{CJK*}
+	
+	\begin{itemize}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\item 2016.05\,-\,2017.05 \qquad 院学生会文艺部部长.
+		\item 2016.03\,-\,2016.10 \qquad 武汉大学自强工作室\href{https://taoke.ziqiang.net.cn/}{淘课啦}项目组，产品副经理.
+		\item 2015.09\,-\, \qquad \qquad \qquad 软件工程五班班长.
+	\end{itemize}
 
+%----------------------------------------------------------------------------------------
+\newpage % Start a new page
+\makeprofile % Print the sidebar
+%----------------------------------------------------------------------------------------
+
+\begin{CJK*}{UTF8}{gkai}
+\section{\large项目与比赛}
+\end{CJK*}
+
+2018.03-2018.05 \quad \emph{TalkingData AdTracking Fraud Detection Challenge} \hfill Top 30\%
 \begin{itemize}
-	\item 2016-2017学年度，院学生会文艺部部长。
-	\item 2016年3月至10月，武汉大学自强工作室“淘课啦”项目组，产品副经理。
-	\item 2015年入学至今，软件工程专业5班班长。
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\item 该比赛发布在\,\href{https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection#description}{\emph{Kaggle}\,}平台，
+	由\,\href{https://www.talkingdata.com/}{\emph{TalkingData}}\,提供数据集.
+	\item 比赛的最终目标，是通过用户行为的数据集构建算法，预测一个点击广告的用户是否会下载\,APP\,.
+	\item 我们尝试了机器学习、深度学习的多种模型，如\,\emph{LR}\,、\,\emph{FM}\,、
+	\,\emph{GBDT}\,、\,\emph{DNN}\,等，最终构建了基于\,\emph{GBDT/LR}\,，
+	以及\,\emph{DNN/LR/FM}\,等混合模型.
+	\item 比赛尚未结束，目前参加队伍约为\,3500\,支，我们的当前排名为\,30\%.
 \end{itemize}
+
+2018.04-2018.06 \qquad  蓝桥杯编程大赛 \hfill 湖北省一等奖
+\begin{itemize}
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\item \href{http://dasai.lanqiao.cn/}{蓝桥杯大赛}的主办方为工业和信息化部人才交流中心.
+	\item 参赛者需在4个小时的时间内解决若干算法问题.
+	\item 比赛尚未结束，目前我已获得湖北省一等奖，并成功入围全国总决赛.
+\end{itemize}
+
+2017.10-2018.03 \qquad “云课堂”——在线教育平台开发 \hfill \emph{Java} 后端开发者
+\begin{itemize}
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\item \href{https://www.dxtwangxiao.com/#/overview}{云课堂}是一个跨平台的在线教育应用，项目的开发团队约为\,30\,人.
+	\item 整个应用采用\href{https://en.wikipedia.org/wiki/Microservices}{微服务架构}，我们采用了\,\emph{Java}\,作为后端开发语言.
+	\item 我作为后端开发者独立完成了“日志服务”模块，其中包含日志记录、流量监测与分析等功能.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\end{center}
+\begin{center}
+\end{center}
+
+\begin{CJK*}{UTF8}{gkai}
+\section{\large附录}
+\end{CJK*}
 
 %----------------------------------------------------------------------------------------
 %	 SECOND PAGE EXAMPLE
